@@ -1,0 +1,28 @@
+name = "Kreepy's Helpers"
+author = "Im Kreepy"
+prefix = "kh"
+mainprefix = "ik"
+
+[files]
+include = [
+    "LICENSE",
+    "changelog",
+    "README",
+]
+exclude = [
+    "addons/main/logos/pngs/*.png",
+]
+
+[version]
+path = "addons/main/script_version.hpp"
+git_hash = 0
+
+[hemtt.release]
+sign = false
+archive = true
+
+[hemtt.launch.default]
+presets = [
+    "AoR", # .html presets from .hemtt/presets/
+]
+mission = "Test.VR"
